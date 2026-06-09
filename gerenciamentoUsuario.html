@@ -32,111 +32,96 @@
             Adicionar Usuário
         </button>
 
-        <div class="tabela">
+      <table class="tabela-usuarios">
+    <thead>
+        <tr>
+            <th>Usuário</th>
+            <th>Cargo</th>
+            <th>Status</th>
+            <th>Permissões</th>
+        </tr>
+    </thead>
 
-            <div class="cabecalho">
-                <span>Usuário</span>
-                <span>Cargo</span>
-                <span>Status</span>
-                <span>Permissões</span>
-            </div>
+    <tbody>
 
-            <!-- usuário -->
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=1">
-                    <div>
-                        <h4>Nicolas Boston</h4>
-                        <small>nicolas@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user1.png">
+                <div>
+                    <strong>Nicolas Boston</strong>
+                    <small>nicolas@gmail.com</small>
                 </div>
+            </td>
 
+            <td>
                 <span class="cargo">Gestor</span>
+            </td>
 
+            <td>
                 <span class="ativo">Ativo</span>
+            </td>
 
+            <td>
                 <select>
                     <option>Permissão</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=2">
-                    <div>
-                        <h4>Marcos Andrade</h4>
-                        <small>marcos@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user2.png">
+                <div>
+                    <strong>Marcos Andrade</strong>
+                    <small>marcos@gmail.com</small>
                 </div>
+            </td>
 
+            <td>
                 <span class="cargo">Cliente</span>
+            </td>
 
+            <td>
                 <span class="bloqueado">Bloqueado</span>
+            </td>
 
+            <td>
                 <select>
                     <option>Permissão</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=3">
-                    <div>
-                        <h4>Felipe Vieira</h4>
-                        <small>felipe@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user3.png">
+                <div>
+                    <strong>Felipe Vieira</strong>
+                    <small>felipe@gmail.com</small>
                 </div>
+            </td>
 
+            <td>
                 <span class="cargo">Cliente</span>
+            </td>
 
+            <td>
                 <span class="inativo">Inativo</span>
+            </td>
 
+            <td>
                 <select>
                     <option>Permissão</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=4">
-                    <div>
-                        <h4>Ana Maria</h4>
-                        <small>ana@email.com</small>
-                    </div>
-                </div>
-
-                <span class="cargo">Maquinista</span>
-
-                <span class="ativo">Ativo</span>
-
-                <select>
-                    <option>Permissão</option>
-                </select>
-            </div>
-
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=5">
-                    <div>
-                        <h4>Cecília Buss</h4>
-                        <small>cecilia@email.com</small>
-                    </div>
-                </div>
-
-                <span class="cargo">Gestora</span>
-
-                <span class="ativo">Ativo</span>
-
-                <select>
-                    <option>Permissão</option>
-                </select>
-            </div>
-
-        </div>
+    </tbody>
+</table>
 
         <button class="btn-bloquear">
             Bloquear
-            <i class="bi bi-chevron-down"></i>
+
         </button>
 
     </div>
