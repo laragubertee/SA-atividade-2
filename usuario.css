@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:30px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+
+.topo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.btn-voltar{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.btn-voltar i{
+    font-size:32px;
+    color:black;
+}
+
+.titulo h1{
+    font-size:38px;
+    color:#23408F;
+    font-weight:700;
+}
+
+
+.card-status{
+    background:#D9D9D9;
+    border-radius:8px;
+    padding:20px;
+    margin-bottom:20px;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    transition:0.3s;
+}
+
+.card-status:hover{
+    transform:translateY(-2px);
+}
+
+
+.icone{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:55px;
+}
+
+.icone i{
+    font-size:42px;
+    color:#333;
+}
+
+.ativo i{
+    color:#2E7D32;
+}
+
+
+.numero{
+    font-size:50px;
+    font-weight:600;
+    color:#23408F;
+    min-width:50px;
+}
+
+
+.texto{
+    display:flex;
+    flex-direction:column;
+}
+
+.texto h3{
+    font-size:22px;
+    font-weight:500;
+    color:#333;
+    margin-bottom:5px;
+}
+
+.texto a{
+    color:#23408F;
+    font-size:16px;
+    text-decoration:underline;
+}
+
+.texto a:hover{
+    opacity:0.8;
+}
+
+
+@media(max-width:600px){
+
+    .titulo h1{
+        font-size:30px;
+    }
+
+    .card-status{
+        padding:15px;
+        gap:15px;
+    }
+
+    .icone i{
+        font-size:35px;
+    }
+
+    .numero{
+        font-size:40px;
+    }
+
+    .texto h3{
+        font-size:18px;
+    }
+
+    .texto a{
+        font-size:14px;
+    }
+
+}

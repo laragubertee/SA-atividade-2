@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario</title>
+    <title>Status de Usuários</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+   
+    <link rel="stylesheet" href="usuario.css">
 </head>
+
 <body>
-    <div class="container">
+
+<div class="container">
 
     <header class="topo">
 
-        
+        <button class="btn-voltar">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+        </button>
+
         <div class="titulo">
             <h1>Status de Usuários</h1>
         </div>
@@ -18,6 +30,10 @@
     </header>
 
     <div class="card-status">
+
+        <div class="icone">
+            <i class="bi bi-person-circle"></i>
+        </div>
 
         <div class="numero">24</div>
 
@@ -27,9 +43,12 @@
         </div>
 
     </div>
-    
 
     <div class="card-status">
+
+        <div class="icone ativo">
+            <i class="bi bi-check-circle"></i>
+        </div>
 
         <div class="numero">16</div>
 
@@ -40,7 +59,12 @@
 
     </div>
 
+
     <div class="card-status">
+
+        <div class="icone">
+            <i class="bi bi-clock-history"></i>
+        </div>
 
         <div class="numero">3</div>
 
@@ -51,7 +75,13 @@
 
     </div>
 
+
     <div class="card-status">
+
+        <div class="icone">
+            <i class="bi bi-person-lock"></i>
+        </div>
+
         <div class="numero">1</div>
 
         <div class="texto">
@@ -62,5 +92,6 @@
     </div>
 
 </div>
+
 </body>
 </html>

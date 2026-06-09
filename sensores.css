@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+}
+
+/* TOPO */
+
+.topo{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:70px;
+}
+
+.voltar{
+    color:black;
+    font-size:28px;
+    text-decoration:none;
+}
+
+.topo h1{
+    color:#23408F;
+    font-size:34px;
+    font-weight:700;
+}
+
+.icones{
+    display:flex;
+    gap:15px;
+    font-size:25px;
+}
+
+/* TÍTULO */
+
+h2{
+    color:#23408F;
+    font-size:28px;
+    margin-bottom:60px;
+}
+
+/* OPÇÕES */
+
+.menu-sensores{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.opcao{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#23408F;
+    font-size:24px;
+    font-weight:700;
+}
+
+.opcao i{
+    color:black;
+    font-size:24px;
+}
+
+/* TREM */
+
+.imagem-trem{
+    margin-top:80px;
+    display:flex;
+    justify-content:center;
+}
+
+.imagem-trem img{
+    width:320px;
+    opacity:0.25;
+}

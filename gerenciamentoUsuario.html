@@ -32,112 +32,165 @@
             Adicionar Usuário
         </button>
 
-        <div class="tabela">
+        <table class="tabela-usuarios">
 
-            <div class="cabecalho">
-                <span>Usuário</span>
-                <span>Cargo</span>
-                <span>Status</span>
-                <span>Permissões</span>
-            </div>
+    <thead>
+        <tr>
+            <th>Usuário</th>
+            <th>Cargo</th>
+            <th>Status</th>
+            <th>Permissões</th>
+        </tr>
+    </thead>
 
-            <!-- usuário -->
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=1">
-                    <div>
-                        <h4>Nicolas Boston</h4>
-                        <small>nicolas@email.com</small>
-                    </div>
+    <tbody>
+
+        <tr>
+            <td class="usuario">
+                <img src="img/user1.png" alt="">
+                <div>
+                    <strong>Nicolas Boston</strong>
+                    <small>nicolas@gmail.com</small>
                 </div>
+            </td>
 
-                <span class="cargo">Gestor</span>
+            <td><span class="cargo">Gestor</span></td>
 
-                <span class="ativo">Ativo</span>
+            <td><span class="ativo">Ativo</span></td>
 
-                <select>
-                    <option>Permissão</option>
+            <td>
+                <select class="permissao-select">
+                    <option>Acesso ao Painel de Monitoramento</option>
+                    <option>Visualizar Relatórios</option>
+                    <option>Gerenciar Estações</option>
+                    <option>Manutenção e Alertas</option>
+                    <option>Cadastrar Trens</option>
+                    <option>Gerenciar Usuários</option>
+                    <option>Edições do Sistema</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=2">
-                    <div>
-                        <h4>Marcos Andrade</h4>
-                        <small>marcos@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user2.png" alt="">
+                <div>
+                    <strong>Marcos Andrade</strong>
+                    <small>marcos@gmail.com</small>
                 </div>
+            </td>
 
-                <span class="cargo">Cliente</span>
+            <td><span class="cargo">Cliente</span></td>
 
-                <span class="bloqueado">Bloqueado</span>
+            <td><span class="bloqueado">Bloqueado</span></td>
 
-                <select>
-                    <option>Permissão</option>
+            <td>
+                <select class="permissao-select">
+                    <option>Acesso ao Painel de Monitoramento</option>
+                    <option selected>Visualizar Relatórios</option>
+                    <option>Gerenciar Estações</option>
+                    <option>Manutenção e Alertas</option>
+                    <option>Cadastrar Trens</option>
+                    <option>Gerenciar Usuários</option>
+                    <option>Edições do Sistema</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=3">
-                    <div>
-                        <h4>Felipe Vieira</h4>
-                        <small>felipe@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user3.png" alt="">
+                <div>
+                    <strong>Felipe Vieira</strong>
+                    <small>felipe@gmail.com</small>
                 </div>
+            </td>
 
-                <span class="cargo">Cliente</span>
+            <td><span class="cargo">Cliente</span></td>
 
-                <span class="inativo">Inativo</span>
+            <td><span class="inativo">Inativo</span></td>
 
-                <select>
-                    <option>Permissão</option>
+            <td>
+                <select class="permissao-select">
+                    <option>Acesso ao Painel de Monitoramento</option>
+                    <option>Visualizar Relatórios</option>
+                    <option selected>Gerenciar Estações</option>
+                    <option>Manutenção e Alertas</option>
+                    <option>Cadastrar Trens</option>
+                    <option>Gerenciar Usuários</option>
+                    <option>Edições do Sistema</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=4">
-                    <div>
-                        <h4>Ana Maria</h4>
-                        <small>ana@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user4.png" alt="">
+                <div>
+                    <strong>Ana Maria</strong>
+                    <small>ana@gmail.com</small>
                 </div>
+            </td>
 
-                <span class="cargo">Maquinista</span>
+            <td><span class="cargo">Maquinista</span></td>
 
-                <span class="ativo">Ativo</span>
+            <td><span class="ativo">Ativo</span></td>
 
-                <select>
-                    <option>Permissão</option>
+            <td>
+                <select class="permissao-select">
+                    <option>Acesso ao Painel de Monitoramento</option>
+                    <option>Visualizar Relatórios</option>
+                    <option>Gerenciar Estações</option>
+                    <option selected>Manutenção e Alertas</option>
+                    <option>Cadastrar Trens</option>
+                    <option>Gerenciar Usuários</option>
+                    <option>Edições do Sistema</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-            <div class="linha">
-                <div class="usuario">
-                    <img src="https://i.pravatar.cc/40?img=5">
-                    <div>
-                        <h4>Cecília Buss</h4>
-                        <small>cecilia@email.com</small>
-                    </div>
+        <tr>
+            <td class="usuario">
+                <img src="img/user5.png" alt="">
+                <div>
+                    <strong>Cecília Buss</strong>
+                    <small>cecilia@gmail.com</small>
                 </div>
+            </td>
 
-                <span class="cargo">Gestora</span>
+            <td><span class="cargo">Gestora</span></td>
 
-                <span class="ativo">Ativo</span>
+            <td><span class="ativo">Ativo</span></td>
 
-                <select>
-                    <option>Permissão</option>
+            <td>
+                <select class="permissao-select">
+                    <option>Acesso ao Painel de Monitoramento</option>
+                    <option>Visualizar Relatórios</option>
+                    <option>Gerenciar Estações</option>
+                    <option>Manutenção e Alertas</option>
+                    <option>Cadastrar Trens</option>
+                    <option selected>Gerenciar Usuários</option>
+                    <option>Edições do Sistema</option>
                 </select>
-            </div>
+            </td>
+        </tr>
 
-        </div>
+    </tbody>
+
+</table>
+
+        <div class="area-bloqueio">
+
+            <input
+                type="text"
+                id="buscarUsuario"
+                placeholder="Digite o nome do usuário">
 
         <button class="btn-bloquear">
-            Bloquear
-            <i class="bi bi-chevron-down"></i>
+            Bloquear Usuário
         </button>
+
+</div>
 
     </div>
 
