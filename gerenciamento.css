@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.celular{
+    width:100%;
+    max-width:1200px;
+}
+
+header{
+    margin-bottom:20px;
+}
+
+.titulo h1{
+    color:#23408F;
+    font-size:42px;
+    font-weight:700;
+}
+
+.titulo p{
+    color:#444;
+    font-size:14px;
+}
+
+.container{
+    background:#e8e8e8;
+    padding:20px;
+    border-radius:6px;
+}
+
+/* ÁREA DE BUSCA */
+
+.area-busca{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.area-busca input{
+    width:320px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:14px;
+    outline:none;
+}
+
+/* BOTÕES */
+
+.btn-azul{
+    background:#23408F;
+    color:white;
+    border:none;
+    border-radius:4px;
+    padding:10px 20px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:500;
+}
+
+.btn-azul:hover{
+    opacity:0.9;
+}
+
+.btn-adicionar{
+    display:block;
+    width:250px;
+    margin:0 auto 20px auto;
+}
+
+/* TABELA */
+
+.tabela-usuarios{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+.tabela-usuarios thead{
+    background:#23408F;
+    color:white;
+}
+
+.tabela-usuarios th{
+    padding:12px;
+    text-align:left;
+    font-size:14px;
+}
+
+.tabela-usuarios td{
+    padding:15px 10px;
+    vertical-align:middle;
+    border-bottom:1px solid #ddd;
+}
+
+/* USUÁRIO */
+
+.usuario{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.usuario img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.usuario div{
+    display:flex;
+    flex-direction:column;
+}
+
+.usuario strong{
+    font-size:13px;
+}
+
+.usuario small{
+    color:#666;
+    font-size:11px;
+}
+
+/* CARGO */
+
+.cargo{
+    background:#23408F;
+    color:white;
+    padding:5px 10px;
+    border-radius:4px;
+    font-size:12px;
+}
+
+/* STATUS */
+
+.ativo{
+    color:#00c853;
+    font-weight:700;
+}
+
+.inativo{
+    color:#ff9800;
+    font-weight:700;
+}
+
+.bloqueado{
+    color:#f44336;
+    font-weight:700;
+}
+
+/* SELECT */
+
+.permissao-select{
+    background:#23408F;
+    color:white;
+    border:none;
+    border-radius:4px;
+    padding:6px 10px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+.permissao-select option{
+    background:white;
+    color:black;
+}
+
+/* ÁREA BLOQUEAR */
+
+.area-bloqueio{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+}
+
+.btn-bloquear{
+    background:#f44336;
+    color:white;
+    border:none;
+    border-radius:4px;
+    padding:10px 30px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:500;
+}
+
+.btn-bloquear:hover{
+    background:#d32f2f;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .titulo h1{
+        font-size:30px;
+    }
+
+    .area-busca{
+        flex-direction:column;
+    }
+
+    .area-busca input{
+        width:100%;
+    }
+
+    .btn-adicionar{
+        width:100%;
+    }
+
+    .tabela-usuarios{
+        display:block;
+        overflow-x:auto;
+    }
+
+}

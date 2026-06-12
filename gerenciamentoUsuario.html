@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
 
-<title>Usuários</title>
+    <link rel="stylesheet" href="gerenciamento.css">
 </head>
 
 <body>
@@ -12,189 +13,123 @@
 <div class="celular">
 
     <header>
-
         <div class="titulo">
-            <div>
-                <h1>Usuários</h1>
-                <p>Gerenciamento de usuário</p>
-            </div>
+            <h1>Usuários</h1>
+            <p>Gerenciamento de usuário</p>
         </div>
-
     </header>
 
     <div class="container">
 
-        <button class="btn-azul">
-            Buscar usuário
-        </button>
-
-        <button class="btn-azul">
-            Adicionar Usuário
-        </button>
-
-        <table class="tabela-usuarios">
-
-    <thead>
-        <tr>
-            <th>Usuário</th>
-            <th>Cargo</th>
-            <th>Status</th>
-            <th>Permissões</th>
-        </tr>
-    </thead>
-
-    <tbody>
-
-        <tr>
-            <td class="usuario">
-                <img src="img/user1.png" alt="">
-                <div>
-                    <strong>Nicolas Boston</strong>
-                    <small>nicolas@gmail.com</small>
-                </div>
-            </td>
-
-            <td><span class="cargo">Gestor</span></td>
-
-            <td><span class="ativo">Ativo</span></td>
-
-            <td>
-                <select class="permissao-select">
-                    <option>Acesso ao Painel de Monitoramento</option>
-                    <option>Visualizar Relatórios</option>
-                    <option>Gerenciar Estações</option>
-                    <option>Manutenção e Alertas</option>
-                    <option>Cadastrar Trens</option>
-                    <option>Gerenciar Usuários</option>
-                    <option>Edições do Sistema</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="usuario">
-                <img src="img/user2.png" alt="">
-                <div>
-                    <strong>Marcos Andrade</strong>
-                    <small>marcos@gmail.com</small>
-                </div>
-            </td>
-
-            <td><span class="cargo">Cliente</span></td>
-
-            <td><span class="bloqueado">Bloqueado</span></td>
-
-            <td>
-                <select class="permissao-select">
-                    <option>Acesso ao Painel de Monitoramento</option>
-                    <option selected>Visualizar Relatórios</option>
-                    <option>Gerenciar Estações</option>
-                    <option>Manutenção e Alertas</option>
-                    <option>Cadastrar Trens</option>
-                    <option>Gerenciar Usuários</option>
-                    <option>Edições do Sistema</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="usuario">
-                <img src="img/user3.png" alt="">
-                <div>
-                    <strong>Felipe Vieira</strong>
-                    <small>felipe@gmail.com</small>
-                </div>
-            </td>
-
-            <td><span class="cargo">Cliente</span></td>
-
-            <td><span class="inativo">Inativo</span></td>
-
-            <td>
-                <select class="permissao-select">
-                    <option>Acesso ao Painel de Monitoramento</option>
-                    <option>Visualizar Relatórios</option>
-                    <option selected>Gerenciar Estações</option>
-                    <option>Manutenção e Alertas</option>
-                    <option>Cadastrar Trens</option>
-                    <option>Gerenciar Usuários</option>
-                    <option>Edições do Sistema</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="usuario">
-                <img src="img/user4.png" alt="">
-                <div>
-                    <strong>Ana Maria</strong>
-                    <small>ana@gmail.com</small>
-                </div>
-            </td>
-
-            <td><span class="cargo">Maquinista</span></td>
-
-            <td><span class="ativo">Ativo</span></td>
-
-            <td>
-                <select class="permissao-select">
-                    <option>Acesso ao Painel de Monitoramento</option>
-                    <option>Visualizar Relatórios</option>
-                    <option>Gerenciar Estações</option>
-                    <option selected>Manutenção e Alertas</option>
-                    <option>Cadastrar Trens</option>
-                    <option>Gerenciar Usuários</option>
-                    <option>Edições do Sistema</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="usuario">
-                <img src="img/user5.png" alt="">
-                <div>
-                    <strong>Cecília Buss</strong>
-                    <small>cecilia@gmail.com</small>
-                </div>
-            </td>
-
-            <td><span class="cargo">Gestora</span></td>
-
-            <td><span class="ativo">Ativo</span></td>
-
-            <td>
-                <select class="permissao-select">
-                    <option>Acesso ao Painel de Monitoramento</option>
-                    <option>Visualizar Relatórios</option>
-                    <option>Gerenciar Estações</option>
-                    <option>Manutenção e Alertas</option>
-                    <option>Cadastrar Trens</option>
-                    <option selected>Gerenciar Usuários</option>
-                    <option>Edições do Sistema</option>
-                </select>
-            </td>
-        </tr>
-
-    </tbody>
-
-</table>
-
-        <div class="area-bloqueio">
+        <div class="area-busca">
 
             <input
                 type="text"
                 id="buscarUsuario"
                 placeholder="Digite o nome do usuário">
 
-        <button class="btn-bloquear">
-            Bloquear Usuário
-        </button>
+            <button class="btn-azul" id="btnBuscar">
+                Buscar
+            </button>
 
-</div>
+        </div>
+
+        <a href="adicionarUsuario.html">
+            <button class="btn-azul btn-adicionar">
+                Adicionar Usuário
+            </button>
+        </a>
+
+        <table class="tabela-usuarios">
+
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Cargo</th>
+                    <th>Status</th>
+                    <th>Permissões</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaUsuarios">
+
+                <tr class="linha-usuario">
+                    <td class="usuario">
+                        <img src="img/user1.png" alt="Usuário">
+                        <div>
+                            <strong>Nicolas Boston</strong>
+                            <small>nicolas@gmail.com</small>
+                        </div>
+                    </td>
+
+                    <td><span class="cargo">Gestor</span></td>
+
+                    <td><span class="ativo">Ativo</span></td>
+
+                    <td>
+                        <select class="permissao-select">
+                            <option>Acesso ao Painel de Monitoramento</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="linha-usuario">
+                    <td class="usuario">
+                        <img src="img/user2.png" alt="Usuário">
+                        <div>
+                            <strong>Marcos Andrade</strong>
+                            <small>marcos@gmail.com</small>
+                        </div>
+                    </td>
+
+                    <td><span class="cargo">Cliente</span></td>
+
+                    <td><span class="bloqueado">Bloqueado</span></td>
+
+                    <td>
+                        <select class="permissao-select">
+                            <option>Visualizar Relatórios</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="linha-usuario">
+                    <td class="usuario">
+                        <img src="img/user3.png" alt="Usuário">
+                        <div>
+                            <strong>Felipe Vieira</strong>
+                            <small>felipe@gmail.com</small>
+                        </div>
+                    </td>
+
+                    <td><span class="cargo">Cliente</span></td>
+
+                    <td><span class="inativo">Inativo</span></td>
+
+                    <td>
+                        <select class="permissao-select">
+                            <option>Gerenciar Estações</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="area-bloqueio">
+
+            <button class="btn-bloquear">
+                Bloquear Usuário
+            </button>
+
+        </div>
 
     </div>
 
 </div>
+
+<script src="gerenciamentoUsuario.js"></script>
 
 </body>
 </html>

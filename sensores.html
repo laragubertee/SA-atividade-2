@@ -3,64 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sensores</title>
-
-    <link rel="stylesheet" href="sensores.css">
+    <title>Gerenciamento de Sensores</title>
 
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="sensores.css">
 </head>
 
 <body>
 
-<div class="container">
+    <aside class="menu-lateral" id="menu">
 
-   
-    <div class="topo">
+        <div class="menu-topo">
 
-        <a href="dashboard.html" class="voltar">
-            <i class="bi bi-arrow-left-circle-fill"></i>
-        </a>
+            <a href="#">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </a>
 
-        <h1>Sensores</h1>
+            <h2>Sensores</h2>
 
-        <div class="icones">
-            <i class="bi bi-moon-fill"></i>
-            <i class="bi bi-bell"></i>
         </div>
 
-    </div>
+        <h3>Selecione uma opção:</h3>
 
+        <nav>
 
-    <h2>Selecione uma opção:</h2>
+            <a href="#">
+                <i class="bi bi-plus-circle-fill"></i>
+                Adicionar Sensor
+            </a>
 
+            <a href="#">
+                <i class="bi bi-dash-circle-fill"></i>
+                Remover Sensor
+            </a>
 
-    <div class="menu-sensores">
+            <a href="#">
+                <i class="bi bi-pencil-fill"></i>
+                Editar Sensor
+            </a>
 
-        <a href="adicionar-sensor.html" class="opcao">
-            <i class="bi bi-plus-circle-fill"></i>
-            <span>Adicionar Sensor</span>
-        </a>
+        </nav>
 
-        <a href="remover-sensor.html" class="opcao">
-            <i class="bi bi-dash-circle-fill"></i>
-            <span>Remover Sensor</span>
-        </a>
+    </aside>
 
-        <a href="editar-sensor.html" class="opcao">
-            <i class="bi bi-pencil-fill"></i>
-            <span>Editar Sensor</span>
-        </a>
+    <main class="conteudo">
 
-    </div>
+        <div class="topo">
 
-   
-    <div class="imagem-trem">
-        <img src="trem.png" alt="Trem">
-    </div>
+            <button id="btnMenu" class="btn-menu">
+                <i class="bi bi-list"></i>
+            </button>
 
-</div>
+            <div class="icones">
+
+                <i class="bi bi-gear"></i>
+
+                <i class="bi bi-moon-fill"></i>
+
+                <i class="bi bi-bell"></i>
+
+            </div>
+
+        </div>
+
+        <h1>Informações</h1>
+
+        <div class="campo">
+
+            <label>Selecione o tipo de sensor:</label>
+
+            <select>
+                <option>Sensor - KY-037</option>
+                <option>Sensor - KY-038</option>
+                <option>Sensor - KY-039</option>
+            </select>
+
+        </div>
+        <div class="campo">
+
+            <label>Selecione o local do sensor:</label>
+
+            <select>
+                <option>Trilho 1</option>
+                <option>Trilho 2</option>
+                <option selected>Trilho 3</option>
+            </select>
+
+        </div>
+        <div class="campo">
+
+            <label>Selecione a data da adição:</label>
+
+            <input type="date">
+
+        </div>
+        <div class="campo">
+
+            <label>Descreva o procedimento:</label>
+
+            <input type="text">
+
+        </div>
+        <div class="trem">
+
+            <img src="trem.png" alt="Trem">
+
+        </div>
+
+    </main>
+
+    <script src="sensores.js"></script>
 
 </body>
 </html>
