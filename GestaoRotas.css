@@ -1,0 +1,206 @@
+:root {
+    --AzulPrincipal: #2563EB;
+    --AzulEscuro: #1E3A8A;
+    --AzulClaro: #93C5FD;
+    --CinzaEscuro: #1F2937;
+    --CinzaClaro: #E5E7EB;
+    --Branco: #FFFFFF;
+    --Vermelho: #EF4444;
+    --Amarelo: #FACC15;
+    --Verde: #22C55E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--CinzaClaro);
+    color: var(--CinzaEscuro);
+}
+
+.screen-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.screen-title{
+    display: none;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1{
+    color: var(--AzulEscuro);
+    font-size: 28px;
+}
+
+header button{
+    display: none;
+}
+
+.top-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--AzulEscuro);
+    font-size: 20px;
+}
+
+.logo{
+    width: 45px;
+    height: auto;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* CARDS */
+section{
+    width: 80%;
+    background-color: var(--AzulClaro);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+section h2{
+    text-align: center;
+    color: var(--Branco);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* HORÁRIOS */
+section:first-of-type > div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+section:first-of-type p{
+    color: var(--Branco);
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* STATUS */
+section:nth-of-type(2) > div:first-of-type{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article{
+    background-color: var(--AzulPrincipal);
+    color: var(--Branco);
+    width: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+article h3{
+    margin-bottom: 10px;
+}
+
+/* ALERTAS */
+section:last-of-type{
+    background-color: var(--AzulClaro) !important;
+    border: none;
+}
+
+section:last-of-type > div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section:last-of-type p{
+    background-color: var(--AzulPrincipal);
+    color: var(--Branco);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+/* BOTÕES INFERIORES */
+section > div:last-child{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section > div:last-child button{
+    width: 20px !important;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+section > div:last-child button:first-child{
+    background-color: var(--CinzaEscuro);
+}
+
+section > div:last-child button:last-child{
+    background-color: var(--AzulPrincipal);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section{
+        width: 95%;
+    }
+
+    section:first-of-type > div:first-of-type,
+    section:last-of-type > div:first-of-type{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article{
+        width: 100%;
+    }
+}
+
+.titulo-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+header h1{
+    color: var(--AzulEscuro);
+    font-size: 28px;
+    margin: 0;
+}

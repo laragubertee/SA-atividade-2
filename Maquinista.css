@@ -1,0 +1,196 @@
+:root {
+    --AzulPrincipal:#2563EB;
+    --AzulEscuro:#1E3A8A;
+    --AzulClaro: #93C5FD;
+    --CinzaEscuro:#1F2937;
+    --CinzaClaro:#E5E7EB;
+    --Branco:#FFFFFF;
+    --Vermelho:#EF4444;
+    --Amarelo:#FACC15;
+    --Verde: #22C55E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--Branco);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+
+.screen-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+   
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "footer header"
+        "footer main";
+    position: relative;
+}
+
+
+.screen-title {
+    display: none;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: var(--AzulEscuro);
+    padding: 40px 0 40px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    margin-top: 80px; 
+}
+
+footer nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: color 0.2s, padding-left 0.2s;
+}
+
+footer nav ul li a div {
+    font-size: 1.8rem;
+    width: 40px;
+    text-align: center;
+}
+
+footer nav ul li a:hover {
+    color: var(--Branco);
+    padding-left: 5px; 
+}
+
+
+footer nav ul li:nth-child(n+4) {
+    display: none;
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: var(--Branco);
+    padding: 30px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header h1 {
+    font-size: 0; 
+}
+
+
+header::before {
+    content: "≡"; 
+    font-size: 2.8rem;
+    color: var(--AzulClaro);
+    cursor: pointer;
+    position: absolute;
+    left: 17%; 
+    top: 20px;
+    transition: color 0.2s;
+}
+
+header::before:hover {
+    color: var(--Branco);
+}
+
+
+header div {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+header div button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; 
+}
+
+
+header div button::before {
+    font-size: 1.5rem; 
+    transition: transform 0.2s;
+}
+
+header div button:hover::before {
+    transform: scale(1.15);
+}
+
+header div button:nth-child(1)::before { content: "♿"; filter: hue-rotate(140deg); } 
+header div button:nth-child(2)::before { content: "⚙️"; }
+header div button:nth-child(3)::before { content: "🌙"; }
+header div button:nth-child(4) { display: none; }
+
+
+
+main {
+    grid-area: main;
+    background-color: var(--Branco);
+    padding: 40px 60px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px; 
+    justify-content: flex-start;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+}
+
+main section a {
+    text-decoration: none;
+    color: var(--AzulPrincipal);
+    font-size: 1.5rem; 
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+
+main section a span {
+    color: #111111;
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: inline-block;
+    transform: scaleY(1.4) scaleX(0.4); 
+    margin-right: 5px;
+}
+
+main section a:hover {
+    color: var(--AzulEscuro);
+    transform: translateX(8px);
+}
