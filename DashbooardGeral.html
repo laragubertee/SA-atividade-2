@@ -1,56 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashbooard Geral</title>
-</head>
-<body>
-     <div class="screen-container">
-        <p class="screen-title">Dashbooard Geral</p>
-        <header>
-            <h1>Dashbooard Geral</h1>
-            <div>
-                <button>Acessibilidade (✋)</button>
-                <button>Configurações (⚙️)</button>
-                <button>Modo Escuro (🌙)</button>
-            </div>
-        </header>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="DashbooardGeral.css" />
+  </head>
+  <body>
+    <div class="screen-container">
+      <p class="screen-title">Dashboard Geral</p>
+      <header>
+        <div class="titulo-logo">
+          <img
+            src="Captura_de_tela_2026-06-12_092539-removebg-preview.png"
+            class="logo"
+            alt="Logo"
+          />
+          <h1>Dashboard Geral</h1>
+        </div>
 
-        <main>
-            <section style="background: #161b22; text-align: center;">
-                <h3>17° - Joinville</h3>
-                <p>Terça, 9/06 | 0mm, 20%</p>
-                <img src="transferir.png" alt="Alerta" width="190" height="200">
-            </section>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                <article>
-                    <h4>Meu Perfil</h4>
-                    <img src="3135823.png" alt="Perfil" width="160" height="170" style="width:100%; height:auto; max-height:80px; object-fit:contain;">
-                </article>
-                <article>
-                    <h4>Documentação</h4>
-                    <img src="documento.jfif" alt="Perfil" width="160" height="170" style="width:100%; height:auto; max-height:80px; object-fit:contain;">
-                </article>
-            </div>
+        <div class="top-icons">
+          <i class="bi bi-universal-access"></i>
+          <i class="bi bi-gear"></i>
+          <i class="bi bi-moon-fill"></i>
+          <i class="bi bi-bell"></i>
+        </div>
+      </header>
 
-            <section style="background: transparent; border: none; text-align:center;">
-                <img src="Gemini_Generated_Image_7l35b87l35b87l35.png" alt="Perfil" width="190" height="170" style="width:100%; height:auto; border-radius:8px;">
-            </section>
-        </main>
+      <main>
+        <section class="clima">
+          <div>
+            <h3>17° - Joinville</h3>
+            <p>Terça, 9/06 | 0mm, 20%</p>
+          </div>
+          <img src="transferir.png" alt="clima" />
+        </section>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#"><div>🏠</div><span>Início</span></a></li>
-                    <li><a href="#"><div>📄</div><span>Menu</span></a></li>
-                    <li><a href="#"><div>🛒</div><span>Estoque</span></a></li>
-                    <li><a href="#"><div>⚙️</div><span>Funcionários</span></a></li>
-                </ul>
-            </nav>
-        </footer>
+        <div class="cards">
+          <article>
+            <h4>Meu Perfil</h4>
+            <img src="3135823.png" />
+          </article>
+
+          <article>
+            <h4>Documentação</h4>
+            <img src="documento.jfif" />
+          </article>
+        </div>
+
+        <section class="grafico">
+          <img src="Gemini_Generated_Image_7l35b87l35b87l35.png" height="100" width="100"/>
+        </section>
+      </main>
+
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                ><div>🏠</div>
+                <span>Início</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><div>📄</div>
+                <span>Menu</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><div>⚙️</div>
+                <span>Funcionários</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
