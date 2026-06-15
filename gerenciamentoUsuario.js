@@ -1,4 +1,3 @@
-// CARREGAR USUÁRIOS SALVOS
 
 const tabela = document.getElementById("tabelaUsuarios");
 
@@ -62,5 +61,45 @@ btnBuscar.addEventListener("click", function () {
         }
 
     });
+
+});
+
+
+
+const btnBloquear = document.getElementById("btnBloquear");
+const campoBloqueio = document.getElementById("nomeBloquear");
+
+btnBloquear.addEventListener("click", function () {
+
+    const pesquisa = campoBloqueio.value.toLowerCase().trim();
+
+    if (pesquisa === "") {
+        alert("Digite o nome do usuário.");
+        return;
+    }
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    let encontrado = false;
+
+    usuarios.forEach(function (usuario) {
+
+        if (usuario.nome.toLowerCase().includes(pesquisa)) {
+
+            usuario.status = "Bloqueado";
+            encontrado = true;
+
+        }
+
+    });
+
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+    if (encontrado) {
+        alert("Usuário bloqueado com sucesso!");
+        location.reload();
+    } else {
+        alert("Usuário não encontrado!");
+    }
 
 });
