@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remover sensores</title>
+    <title>Adicionar Sensores</title>
+    <link rel="stylesheet" href="removerSensor.css">
+</head>
+
+<body>
 
     <header>
-        <form.seta_tela_trens action="">
-        <button type="submit">Seta</button>
-        </form>
+
+        <div class="icones">
+            <i class="bi bi-moon-fill"></i>
+            <i class="bi bi-bell"></i>
+        </div>
 
         <h1>Remover Sensores</h1>
 
     </header>
-</head>
-<body>
 
-    <h2>Informações </h2>
+    <h2>Informações</h2>
 
-     <div class="conteudo">
+    <div class="conteudo">
 
-    <h3>Selecione o tipo de sensor: </h3>
-    <form action="/action_page.php">
-        <select name="nomeSensor" id="nomeSensor">
-            <option value="sensor1">Sensor - KY-037</option>
-            <option value="sensor2">Sensor - KY-038</option>
-            <option value="sensor3">Sensor - KY-039</option>
-        </select>
+        <h3>Selecione o tipo de sensor:</h3>
+
+        <form action="">
+            <select name="nomeSensor" id="nomeSensor">
+                <option value="sensor1">Sensor - KY-037</option>
+                <option value="sensor2">Sensor - KY-038</option>
+                <option value="sensor3">Sensor - KY-039</option>
+            </select>
+        </form>
+
+        <h3>Selecione o local do sensor:</h3>
+
+        <form action="">
+            <select name="local" id="local">
+                <option value="localsensor1">Trilho 1</option>
+                <option value="localsensor2">Trilho 2</option>
+                <option value="localsensor3">Trilho 3</option>
+            </select>
+        </form>
+
+        <h3>Selecione a data de remoção:</h3>
+
+        <input type="date" id="dataAdicao">
+
         <br><br>
-        <input type="salvar" value="Salvar">
-    </form>
 
-    <h3>Selecione o local de sensor: </h3>
-    <form action="/action_page.php">
-        <select name="local" id="local">
-            <option value="localsensor1">Trilho 1</option>
-            <option value="localsensor2">Trilho 2</option>
-            <option value="localsensor3">Trilho 3</option>
-        </select>
-        <br><br>
-        <input type="salvar" value="Salvar">
-    </form>
+        <label for="procedimento">Descreva o procedimento:</label>
 
-    <h3>Selecione a data de remoção: </h3>
-    <div>
-        <h3>Calculadora</h3>
+        <input type="text" id="procedimento" name="procedimento">
+
     </div>
 
-        <label>Descreva o procedimento:</label>
-        <input type="text">
-
-    </div>
-
-
-    
-    
 </body>
+
 </html>
