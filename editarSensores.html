@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Sensor</title>
+
+    <link rel="stylesheet" href="editarsensores.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Editar Sensor</h1>
+
+    <div class="campo">
+        <label>Selecione o sensor:</label>
+
+        <select id="sensor">
+            <option>Sensor 001</option>
+            <option>Sensor 002</option>
+            <option>Sensor 003</option>
+        </select>
+
+        <input type="text" id="novoSensor" placeholder="Novo sensor">
+
+        <button type="button" onclick="adicionarSensor()">
+            Adicionar Sensor
+        </button>
+    </div>
+
+    <div class="campo">
+        <label>Tipo de sensor:</label>
+
+        <select id="tipo">
+            <option>KY-037</option>
+            <option>KY-038</option>
+            <option>KY-039</option>
+        </select>
+
+        <input type="text" id="novoTipo" placeholder="Novo tipo">
+
+        <button type="button" onclick="adicionarTipo()">
+            Adicionar Tipo
+        </button>
+    </div>
+
+    <div class="campo">
+        <label>Local do sensor:</label>
+
+        <select id="local">
+            <option>Trilho 1</option>
+            <option>Trilho 2</option>
+            <option>Trilho 3</option>
+        </select>
+
+        <input type="text" id="novoLocal" placeholder="Novo local">
+
+        <button type="button" onclick="adicionarLocal()">
+            Adicionar Local
+        </button>
+    </div>
+
+    <div class="campo">
+        <label>Data da alteração:</label>
+
+        <input type="date" id="data">
+    </div>
+
+    <div class="campo">
+        <label>Descrição:</label>
+
+        <textarea id="descricao" rows="5"></textarea>
+    </div>
+
+    <button class="btn-salvar" id="btnSalvar">
+        Salvar Alterações
+    </button>
+
+</div>
+
+<script src="editarSensor.js"></script>
+
+</body>
+</html>
