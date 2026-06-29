@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trens Cadastrados</title>
+    <link rel="stylesheet" href="trens-cadastrados.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <form.seta_tela_trens action="">
-    <button type="submit">Seta</button>
-    </form>
+<button class="seta_esquerda" type="button" class="seta_esquerda" onclick="window.location.href='#'">
+    <i class="bi bi-arrow-left-circle-fill"></i>
+</button>
+
 
     <h1>Trens Cadastrados</h1>
     <table>
@@ -25,76 +28,91 @@
             <tr>
                 <td>RailWave</td>
                 <td>48291</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Linha 1</td>
                 <td>Parado (0km)</td>
             </tr>
             <tr>
                 <td>FerroTrack</td>
                 <td>10584</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Em túnel</td>
                 <td>80km</td>
             </tr>
             <tr>
                 <td>Trem Nexus</td>
                 <td>77420</td>
-                <td>Inativo</td>
+                <td class="inativo">Inativo</td>
                 <td>Oficina</td>
                 <td>Parado (0km)</td>
             </tr>
             <tr>
                 <td>Linha Aurora</td>
                 <td>93815</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Área Urbana</td>
                 <td>75km/h</td>
             </tr>
             <tr>
                 <td>Urban Rails</td>
                 <td>28473</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Área rural</td>
                 <td>160km/h</td>
             </tr>
             <tr>
                 <td>Trem Safira</td>
                 <td>11859</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Ponte Ferroviária</td>
                 <td>90km/h</td>
             </tr>
             <tr>
                 <td>Trilho Lunar</td>
                 <td>45720</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Na via expressa</td>
                 <td>100km/h</td>
             </tr>
             <tr>
                 <td>ViaFerro</td>
                 <td>73016</td>
-                <td>Inativo</td>
+                <td class="inativo">Inativo</td>
                 <td>Área de embarque</td>
                 <td>Parado (0km)</td>
             </tr>
             <tr>
                 <td>Veloz Rail</td>
                 <td>55012</td>
-                <td>Inativo</td>
+                <td class="inativo">Inativo</td>
                 <td>Estacionamento</td>
                 <td>Parado (0km)</td>
             </tr>
             <tr>
                 <td>Blue Train</td>
                 <td>34682</td>
-                <td>Ativo</td>
+                <td class="ativo">Ativo</td>
                 <td>Zona de sinalização</td>
                 <td>30 km/h</td>
             </tr>
         </tbody>
     </table>
 
-    
+
+<div class="form-trens">
+<input type="text" id="nome" placeholder="Nome">
+<input type="text" id="id" placeholder="ID">
+<label for="status"></label>
+<select id="status">
+    <option value="Ativo">Ativo</option>
+    <option value="Inativo">Inativo</option>
+</select>
+<input type="text" id="local" placeholder="Local">
+<input type="text" id="velocidade" placeholder="Velocidade">
+</div>
+
+
+<button class="adicionar_trem" onclick="adicionarTrem()">Adicionar Trem</button>
+   
 </body>
 </html>

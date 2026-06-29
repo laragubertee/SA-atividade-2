@@ -1,0 +1,131 @@
+/* ===================================
+   BARRA DE PESQUISA
+=================================== */
+
+.barra-busca{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.barra-busca input{
+    flex:1;
+    height:50px;
+    padding:0 18px;
+    border:2px solid var(--CinzaClaro);
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.barra-busca input:focus{
+    border-color:var(--AzulPrincipal);
+}
+
+.barra-busca button{
+    width:55px;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    background:var(--AzulPrincipal);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.barra-busca button:hover{
+    background:var(--AzulEscuro);
+}
+
+/* ===================================
+   LISTA DE ALERTAS
+=================================== */
+
+.lista-alertas{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    align-items:flex-start;
+}
+
+/* ===================================
+   CARD
+=================================== */
+
+.card-alerta{
+    width:430px;
+    background:var(--AzulClaro);
+    border-radius:20px;
+    padding:22px 25px;
+    color:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.25s;
+}
+
+.card-alerta:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 28px rgba(0,0,0,.20);
+}
+
+.card-alerta h2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.card-alerta p{
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* ===================================
+   BOTÃO FECHAR
+=================================== */
+
+.card-alerta h2 button{
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    background:#111;
+    color:#fff;
+    cursor:pointer;
+    font-size:14px;
+    transition:.25s;
+}
+
+.card-alerta h2 button:hover{
+    background:var(--Vermelho);
+    transform:rotate(90deg);
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media(max-width:900px){
+
+    .barra-busca{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .barra-busca button{
+        width:100%;
+    }
+
+    .lista-alertas{
+        width:100%;
+    }
+
+    .card-alerta{
+        width:100%;
+    }
+
+}

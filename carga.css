@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9; /* Um fundo cinza bem claro para destacar a tabela */
+    margin: 0;
+    padding: 40px;
+}
+
+
+/* O container do cabeçalho */
+.header-manutencao {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mantém o h1 no meio certinho */
+    width: 100%;
+    max-width: 1200px;    
+    margin: 0 auto 30px auto;
+    position: relative;      /* Permite posicionar a seta como absoluta dentro dele */
+}
+
+
+/* MODIFICAÇÃO AQUI: A seta agora gruda na esquerda */
+.seta_esquerda {
+    position: absolute;      /* Desprende ela do fluxo normal do texto */
+    left: -350px;
+    top: -30px;            /* Joga ela bem na ponta esquerda do container */
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.seta_esquerda i {
+    font-size: 40px;
+    color: black;
+}
+
+
+/* O título fica livre para centralizar no meio exato */
+h1 {
+    color: #1E3A8A;
+    font-size: 45px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Estilização da Tabela */
+.tabela-manutencao {
+    width: 100%;
+    max-width: 1200px;        
+    margin: 0 auto;            
+    border-collapse: separate;
+    border-spacing: 15px 22px;
+}
+
+
+/* Cabeçalhos (Trem, Data, Tipo) */
+.tabela-manutencao th {
+    background-color: #1E3A8A;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 15px;
+    width: 33.33%;
+}
+
+
+/* Células de dados (td) */
+.tabela-manutencao td {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    border-left: 1px solid black;
+}
+
+
+/* Remove a linha preta da primeira coluna */
+.tabela-manutencao td:first-child {
+    border-left: none;
+}
+
+
+/* Alinhamentos das laterais */
+.text-esquerda {
+    text-align: left !important;
+    padding-left: 20px !important;
+}
+
+
+.text-direita {
+    text-align: left !important;
+    padding-left: 20px !important;
+}
+
+
+/* O balãozinho cinza das datas */
+.badge-data {
+    display: inline-block;
+    background-color: #E5E7EB;
+    color: #1E3A8A;
+    padding: 6px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}

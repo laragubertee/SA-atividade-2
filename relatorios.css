@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+}
+
+
+.seta_esquerda i {
+    font-size: 40px; /* tamanho */
+    color: black; /* cor */
+}
+
+
+.seta_esquerda {
+    border: none;      /* remove borda */
+    background: none;  /* remove fundo */
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+    padding: 0;        /* remove espaço interno */
+}
+
+
+h1 {
+    color:#1E3A8A;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 60px;
+
+
+}
+
+
+.relatorios_operacionais {
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 20px;
+    border-color: #1E3A8A;
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+     width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+
+
+}
+.relatorios_carga {
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 20px;
+    border-color: #1E3A8A;
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+     width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+
+
+}
+.relatorios_passagens {
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 20px;
+    border-color: #1E3A8A;
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+     width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+
+
+}
+.relatorios_manutencao {
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 20px;
+    border-color: #1E3A8A;
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+     width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+
+
+}

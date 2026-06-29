@@ -1,52 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alertas e Notificações</title>
-</head>
-<body>
-      <div class="screen-container">
-        <p class="screen-title">Alertas e Notificações</p>
-        <header>
-            <h1>Alertas e Notificações</h1>
-            <div>
-                <button>Acessibilidade (✋)</button>
-                <button>Configurações (⚙️)</button>
-                <button>Modo Escuro (🌙)</button>
-            </div>
-        </header>
 
-        <main>
-            <div>
-                <input type="text" placeholder="Alertas em tempo real!">
-                <button>Buscar (🔍)</button>
-            </div>
-            <section style="background: #4a1515; border-color: #6e2525; display:flex; flex-direction:column; gap:10px;">
-                <article style="background:rgba(0,0,0,0.2); text-align:left;">
-                    <h2 style="color: #ff8888; font-size:14px; display:flex; justify-content:space-between;">Atenção ⚠️ <button style="width:auto; padding:2px 5px; font-size:10px; margin:0;">Fechar (X)</button></h2>
-                    <p style="color:#fff; font-size:12px; margin-top:5px;">Trem da linha 360 está em atraso de 40 min;</p>
-                </article>
-                <article style="background:rgba(0,0,0,0.2); text-align:left;">
-                    <h2 style="color: #ff8888; font-size:14px; display:flex; justify-content:space-between;">Atenção ⚠️ <button style="width:auto; padding:2px 5px; font-size:10px; margin:0;">Fechar (X)</button></h2>
-                    <p style="color:#fff; font-size:12px; margin-top:5px;">Rota modificada: Devido a obras na via, a Linha 202 não passará pelo ponto da Rua XV de Novembro hoje. Veja o desvio no mapa.</p>
-                </article>
-            </section>
-        </main>
+    <!-- Layout padrão -->
+    <link rel="stylesheet" href="layout.css" />
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#"><span>🏠</span><p>Início</p></a></li>
-                    <li><a href="#"><span>📄</span><p>Menu</p></a></li>
-                    <li><a href="#"><span>🛒</span><p>Estoque</p></a></li>
-                    <li><a href="#"><span>👥</span><p>Funcionários</p></a></li>
-                </ul>
-            </nav>
-        </footer>
+    <!-- CSS específico da página -->
+    <link rel="stylesheet" href="AlertaNotificacoes.css" />
+  </head>
+
+  <body>
+    <div class="screen-container">
+      <p class="screen-title">Alertas e Notificações</p>
+
+      <!-- HEADER PADRÃO -->
+      <header>
+        <div class="titulo-logo">
+          <img
+            src="Captura_de_tela_2026-06-12_092539-removebg-preview.png"
+            class="logo"
+            alt="Logo"
+          />
+
+          <h1>Alertas e Notificações</h1>
+        </div>
+
+        <div class="header-icons">
+          <button>Acessibilidade</button>
+          <button>Configurações</button>
+          <button>Modo Escuro</button>
+          <button>Notificações</button>
+        </div>
+      </header>
+
+      <!-- CONTEÚDO DA PÁGINA -->
+
+      <main>
+        <div class="barra-busca">
+          <input type="text" placeholder="Alertas em tempo real" />
+
+          <button>🔍</button>
+        </div>
+
+        <section class="lista-alertas">
+          <article class="card-alerta">
+            <h2>
+              <span>Atenção 🚨</span>
+
+              <button>✖</button>
+            </h2>
+
+            <p>Trem da linha 360 está em atraso de 40 minutos.</p>
+          </article>
+
+          <article class="card-alerta">
+            <h2>
+              <span>Atenção 🚨</span>
+
+              <button>✖</button>
+            </h2>
+
+            <p>
+              Rota modificada: devido às obras na via, a Linha 202 não passará
+              pelo ponto da Rua XV de Novembro hoje. Veja o desvio no mapa.
+            </p>
+          </article>
+
+          <article class="card-alerta">
+            <h2>
+              <span>Atenção 🚨</span>
+
+              <button>✖</button>
+            </h2>
+
+            <p>
+              Forte chuva prevista para o período da tarde. Algumas linhas
+              poderão sofrer atrasos.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <!-- MENU PADRÃO -->
+
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <div>🏠</div>
+                <span>Início</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div>📄</div>
+                <span>Menu</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div>⚙️</div>
+                <span>Funcionários</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-
-    
-    
-</body>
+  </body>
 </html>

@@ -1,0 +1,64 @@
+.seta_esquerda i {
+    font-size: 40px; /* tamanho */
+    color: black; /* cor */
+}
+
+
+.seta_esquerda {
+    border: none;      
+    background: none;  
+    cursor: pointer;   
+    padding: 0;        
+}
+
+
+h1 {
+    color:#1E3A8A;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 60px;
+}
+
+
+.lugares {
+    width: 190px;          
+    height: 65px;          
+    border-radius: 14px;  
+    font-size: 17px;    
+    text-align: center;  
+    background-color: #1E3A8A;
+    color: white;
+   
+    
+    margin: 0 auto 20px auto;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-lugares {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;  
+    gap: 15px;                
+   
+   
+    margin: 50px auto 30px auto;  
+}
+
+
+.cidade {
+    width: 190px;          
+    height: 65px;          
+    border-radius: 14px;  
+    font-size: 17px;      
+    background-color: #E5E7EB;
+    color: #1E3A8A;
+    margin: 0;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

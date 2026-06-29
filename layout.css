@@ -1,0 +1,347 @@
+/* ===================================
+   VARIÁVEIS
+=================================== */
+
+:root{
+    --AzulPrincipal:#2563eb;
+    --AzulEscuro:#1e3a8a;
+    --AzulClaro:#93c5fd;
+    --CinzaEscuro:#1f2937;
+    --CinzaClaro:#e5e7eb;
+    --Branco:#ffffff;
+    --Vermelho:#ef4444;
+    --Amarelo:#facc15;
+    --Verde:#22c55e;
+}
+
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",system-ui,sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background:var(--Branco);
+}
+
+/* ===================================
+   GRID
+=================================== */
+
+.screen-container{
+
+    width:100vw;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:22% 78%;
+    grid-template-rows:auto 1fr;
+
+    grid-template-areas:
+        "footer header"
+        "footer main";
+
+    position:relative;
+
+    transition:grid-template-columns .4s cubic-bezier(.25,1,.5,1);
+
+}
+
+.screen-container.menu-closed{
+
+    grid-template-columns:0 100%;
+
+}
+
+.screen-title{
+
+    display:none;
+
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+
+    grid-area:header;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 60px 20px;
+
+    background:var(--Branco);
+
+}
+
+/* título escondido (acessibilidade) */
+
+header h1{
+
+    font-size:0;
+
+}
+
+/* logo */
+
+.titulo-logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo{
+
+    width:60px;
+    height:auto;
+
+}
+
+/* botão menu */
+
+header::before{
+
+    content:"≡";
+
+    position:absolute;
+
+    left:19%;
+
+    top:18px;
+
+    font-size:2.7rem;
+
+    color:var(--AzulClaro);
+
+    cursor:pointer;
+
+    transition:
+        left .4s cubic-bezier(.25,1,.5,1),
+        color .3s;
+
+}
+
+.screen-container.menu-closed header::before{
+
+    left:25px;
+    color:var(--AzulEscuro);
+
+}
+
+header::before:hover{
+
+    filter:brightness(1.2);
+
+}
+
+/* ícones */
+
+.header-icons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-left:auto;
+
+}
+
+.header-icons button{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:0;
+
+}
+
+.header-icons button::before{
+
+    font-size:1.5rem;
+
+    transition:.2s;
+
+}
+
+.header-icons button:hover::before{
+
+    transform:scale(1.15);
+
+}
+
+.header-icons button:nth-child(1)::before{
+
+    content:"♿";
+
+}
+
+.header-icons button:nth-child(2)::before{
+
+    content:"⚙️";
+
+}
+
+.header-icons button:nth-child(3)::before{
+
+    content:"🌙";
+
+}
+
+.header-icons button:nth-child(4)::before{
+
+    content:"🔔";
+
+}
+
+/* ===================================
+   MAIN
+=================================== */
+
+main{
+
+    grid-area:main;
+
+    padding:30px 60px 40px 80px;
+
+    overflow-y:auto;
+
+}
+
+/* ===================================
+   MENU LATERAL
+=================================== */
+
+footer{
+
+    grid-area:footer;
+
+    background:var(--AzulEscuro);
+
+    padding:40px 0 40px 40px;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+}
+
+footer nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+    margin-top:80px;
+
+}
+
+footer nav ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    text-decoration:none;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:1.2rem;
+
+    font-weight:500;
+
+    transition:.2s;
+
+}
+
+footer nav ul li a:hover{
+
+    color:#fff;
+
+    padding-left:5px;
+
+}
+
+footer nav ul li a div{
+
+    width:40px;
+
+    text-align:center;
+
+    font-size:1.8rem;
+
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media(max-width:900px){
+
+    .screen-container{
+
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+        "header"
+        "main";
+
+    }
+
+    footer{
+
+        display:none;
+
+    }
+
+    header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+
+        padding:25px;
+
+    }
+
+    header::before{
+
+        display:none;
+
+    }
+
+    .header-icons{
+
+        flex-wrap:wrap;
+
+    }
+
+    main{
+
+        padding:25px;
+
+    }
+
+}

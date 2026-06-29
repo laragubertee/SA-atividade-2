@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+}
+
+
+.seta_esquerda i {
+    font-size: 40px; /* tamanho */
+    color: black; /* cor */
+}
+
+
+.seta_esquerda {
+    border: none;      /* remove borda */
+    background: none;  /* remove fundo */
+    cursor: pointer;   /* mãozinha ao passar o mouse */
+    padding: 0;        /* remove espaço interno */
+}
+
+
+.adicionar_trem {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+}
+
+
+h1 {
+    color:#1E3A8A;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 60px;
+
+
+}
+
+
+thead {
+    background-color: #1E3A8A;
+    color: white;
+}
+
+
+th {
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+   
+}
+
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    font-size: 20px;
+}
+
+
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+
+.inativo {
+    color: red;
+    font-weight: bold;
+}
+
+
+ td {
+    border-right: 1px solid #d9d9d9;
+}
+
+
+input, select {
+    width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+input:focus, select:focus {
+    border-color: #1E3A8A;
+}
+
+
+button {
+    width: 300px;
+    padding: 12px;
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+.form-trens {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.form-trens input,
+.form-trens select {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    padding: 0 10px;
+}

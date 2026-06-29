@@ -2,34 +2,56 @@ body {
     background-color: white;
 }
 
+
 h1 {
     color:#1E3A8A;
     text-align: center;
     margin-top: -40px;
+    font-size: 60px;
+
+
 }
 
-.listaA {
+
+.lista_trens {
     background-color: #1E3A8A;
     color: white;
     border-radius: 20px;
     border-color: #1E3A8A;
     cursor: pointer;   /* mãozinha ao passar o mouse */
+    width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 210px;
+
 
 }
 
-.listaB {
+
+.informacoes_basicas {
     background-color: #1E3A8A;
     color: white;
     border-radius: 20px;
     border-color: #1E3A8A;
     cursor: pointer;   /* mãozinha ao passar o mouse */
+     width: 400px;
+    height: 150px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
+
 
 }
+
 
 .seta_esquerda i {
     font-size: 40px; /* tamanho */
     color: black; /* cor */
 }
+
 
 .seta_esquerda {
     border: none;      /* remove borda */
