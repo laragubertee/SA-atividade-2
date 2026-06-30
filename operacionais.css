@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300;400;500;700;900&display=swap');
+body {
+   font-family: 'Alan Sans', sans-serif; 
+}
 .seta_esquerda i {
     font-size: 40px; 
     color: black; 

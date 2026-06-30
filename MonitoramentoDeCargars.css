@@ -37,9 +37,7 @@ main > div:first-child button:hover{
     background:var(--AzulEscuro);
 }
 
-/* ===================================
-   MAPA
-=================================== */
+
 
 main section{
     width:100%;
@@ -62,9 +60,7 @@ main section p{
     display:none;
 }
 
-/* ===================================
-   BOTÃO ADICIONAR ROTA
-=================================== */
+
 
 main > button{
     width:190px;
@@ -90,9 +86,7 @@ main > button:hover{
     color:#fff;
 }
 
-/* ===================================
-   RESPONSIVO
-=================================== */
+
 
 @media(max-width:900px){
 

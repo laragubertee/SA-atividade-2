@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opção de Pagamento</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOPO -->
+
+    <header>
+
+        <div class="titulo">
+
+            <a href="#">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </a>
+
+            <h1>Opção de pagamento</h1>
+
+        </div>
+
+        <div class="icones">
+
+            <img src="logo.png" alt="Logo">
+
+            <i class="bi bi-gear"></i>
+
+            <i class="bi bi-moon-fill"></i>
+
+            <i class="bi bi-bell"></i>
+
+        </div>
+
+    </header>
+
+
+    <div class="resumo">
+
+        <h3>Resumo da Viagem</h3>
+
+        <div class="linha">
+
+            <div class="item">
+                <i class="bi bi-train-front-fill"></i>
+                <div>
+                    <strong>Luz</strong>
+                    <p>Linha 7 - Joinville</p>
+                </div>
+            </div>
+
+            <i class="bi bi-arrow-left-right seta"></i>
+
+            <div class="item">
+                <strong>Curitiba</strong>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="info">
+
+            <div>
+                <i class="bi bi-calendar3"></i>
+                <p>Data</p>
+                <strong>22/05/2026</strong>
+            </div>
+
+            <div>
+                <i class="bi bi-clock"></i>
+                <p>Horário</p>
+                <strong>08:30</strong>
+            </div>
+
+            <div>
+                <i class="bi bi-person-fill"></i>
+                <p>Passageiro</p>
+                <strong>1 Adulto</strong>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="rodape-resumo">
+
+            <div>
+                <p>Tipo de serviço</p>
+                <strong>Expresso</strong>
+            </div>
+
+            <div>
+                <p>Valor Total</p>
+                <strong>R$ 5,25</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+
+    <h2>Forma de Pagamento</h2>
+
+    <div class="formas">
+
+        <label>
+            <div>
+                <i class="bi bi-credit-card"></i>
+                Cartão de Crédito
+            </div>
+
+            <input type="radio" name="pagamento" checked>
+        </label>
+
+        <label>
+            <div>
+                <i class="bi bi-qr-code"></i>
+                Pix
+            </div>
+
+            <input type="radio" name="pagamento">
+        </label>
+
+        <label>
+            <div>
+                <i class="bi bi-receipt"></i>
+                Boleto
+            </div>
+
+            <input type="radio" name="pagamento">
+        </label>
+
+        <label>
+            <div>
+                <i class="bi bi-wallet2"></i>
+                Carteira Digital
+            </div>
+
+            <input type="radio" name="pagamento">
+        </label>
+
+    </div>
+
+
+    <h2>Detalhes do Pagamento</h2>
+
+    <div class="cartao">
+
+        <div class="dados">
+
+            <img src="visa.png" alt="Visa">
+
+            <span>**** 1234</span>
+
+        </div>
+
+        <button id="trocarCartao">
+            Alterar Cartão
+            <i class="bi bi-arrow-right"></i>
+        </button>
+
+    </div>
+
+    <div class="botao">
+
+        <button id="btnPagar">
+            Pagar R$ 5,25
+        </button>
+
+    </div>
+
+</div>
+
+<script src="pagamento.js"></script>
+
+</body>
+</html>
