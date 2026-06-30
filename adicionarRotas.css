@@ -1,0 +1,202 @@
+:root {
+    --AzulPrincipal: #2563eb;
+    --AzulEscuro: #1e3a8a;
+    --AzulClaro: #93c5fd;
+    --CinzaEscuro: #1f2937;
+    --CinzaClaro: #e5e7eb;
+    --Branco: #ffffff;
+    --Vermelho: #ef4444;
+    --Amarelo: #facc15;
+    --Verde: #22c55e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--Branco);
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.screen-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 40px;
+    position: relative;
+}
+
+/* Ocultar elementos estruturais do HTML que não aparecem no mockup */
+.screen-title, .titulo-logo h1, .logo {
+    display: none;
+}
+
+/* Header & Ícones superiores */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header::before {
+    content: "Adicionar Rotas";
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--AzulEscuro);
+}
+
+header div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Estilização dos botões superiores transformando-os em ícones redondos/quadrados como no design */
+header button {
+    background: none;
+    border: none;
+    font-size: 0; /* Esconde o texto */
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header button:nth-child(1)::before { content: "✋"; font-size: 20px; background-color: #1e40af; color: white; padding: 4px; border-radius: 4px; }
+header button:nth-child(2)::before { content: "⚙️"; font-size: 22px; }
+header button:nth-child(3)::before { content: "🌙"; font-size: 22px; }
+header button:after {
+    content: "🔔"; /* Adicionando o ícone de notificação que falta no HTML original */
+    font-size: 22px;
+    margin-left: 15px;
+}
+header button:not(:last-child):after { display: none; }
+
+/* Main Content */
+main h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+form {
+    max-width: 800px;
+}
+
+form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+/* Selects customizados conforme a imagem */
+form select {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--AzulClaro);
+    color: #6b7280; /* Cor do placeholder/texto */
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%231f2937' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Efeito azul escuro com borda tracejada interna no primeiro select focado */
+form div:nth-child(1) select {
+    border: 2px solid #3b82f6;
+    outline: 1px dashed #1e3a8a;
+    outline-offset: -6px;
+}
+
+/* Input de Data Customizado */
+form div:nth-child(3) {
+    position: relative;
+    max-width: 220px;
+    margin-top: 20px;
+}
+
+form div:nth-child(3) label {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    background-color: var(--AzulEscuro);
+    color: var(--Branco);
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+form input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: var(--Branco);
+    color: #1f2937;
+    outline: none;
+}
+
+/* Botão Excluir Rota */
+form button[type="button"] {
+    width: 220px;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1e3a8a;
+    background-color: var(--AzulClaro) !important; /* Forçando a cor azul clara do mockup */
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+form button[type="button"]:hover {
+    background-color: #60a5fa !important;
+}
+
+/* Footer / Logo no canto inferior direito */
+footer {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+/* Escondendo a barra de navegação inferior que não existe no mockup */
+footer nav {
+    display: none;
+}
+
+/* Criando o logotipo de trem do canto inferior direito usando pseudoelemento */
+footer::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("Captura_de_tela_2026-06-12_092539-removebg-preview.png"); /* Mantém a sua imagem configurada */
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,250 @@
+:root{
+    --AzulPrincipal:#2563eb;
+    --AzulEscuro:#1e3a8a;
+    --AzulClaro:#93c5fd;
+    --CinzaEscuro:#1f2937;
+    --CinzaClaro:#e5e7eb;
+    --Branco:#ffffff;
+    --Vermelho:#ef4444;
+    --Amarelo:#facc15;
+    --Verde:#22c55e;
+}
+
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--CinzaClaro);
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.screen-container{
+    width:100%;
+    min-height:100vh;
+    background:var(--Branco);
+    position:relative;
+}
+
+/* ===================================
+   TÍTULO
+=================================== */
+
+.screen-title{
+    display:none;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    background:var(--Branco);
+    border-bottom:1px solid #ddd;
+}
+
+header h1{
+    color:var(--AzulEscuro);
+    font-size:24px;
+    font-weight:bold;
+}
+
+header div{
+    display:flex;
+    gap:10px;
+}
+
+header button{
+    background:none;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* ===================================
+   FAIXA AZUL
+=================================== */
+
+main{
+    position:relative;
+    padding-top:120px;
+}
+
+main::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:170px;
+    background:var(--AzulPrincipal);
+    z-index:0;
+}
+
+/* ===================================
+   FOTO
+=================================== */
+
+main section{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+main section img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:10px solid var(--AzulEscuro);
+    background:#444;
+    object-fit:cover;
+}
+
+/* ===================================
+   NOME
+=================================== */
+
+main > div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+main label{
+    display:none;
+}
+
+#input-nome{
+    width:160px;
+    height:30px;
+    border:none;
+    border-radius:20px;
+    background:var(--AzulEscuro);
+    color:white;
+    padding:0 15px;
+    font-weight:bold;
+    outline:none;
+}
+
+main > div div{
+    display:flex;
+    align-items:center;
+}
+
+main > div button{
+    margin:0;
+    margin-left:-35px;
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===================================
+   FORMULÁRIO
+=================================== */
+
+form{
+    width:260px;
+    margin-left:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form p{
+    display:flex;
+    flex-direction:column;
+}
+
+form label{
+    display:block;
+    margin-bottom:4px;
+    color:#000;
+    font-size:12px;
+    font-weight:bold;
+}
+
+form input{
+    width:260px;
+    height:22px;
+    border:none;
+    border-radius:20px;
+    background:var(--AzulPrincipal);
+    color:white;
+    padding:0 12px;
+    outline:none;
+}
+
+form input::placeholder{
+    color:white;
+}
+
+/* ===================================
+   BOTÃO SAIR
+=================================== */
+
+button[type="button"]{
+    display:block;
+    margin:55px auto 30px;
+    width:90px;
+    height:32px;
+    border:none;
+    border-radius:20px;
+    background:var(--AzulEscuro) !important;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button[type="button"]:hover{
+    background:var(--AzulPrincipal) !important;
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media(max-width:768px){
+
+    form{
+        width:90%;
+        margin:auto;
+    }
+
+    form input{
+        width:100%;
+    }
+
+    header h1{
+        font-size:20px;
+    }
+
+    main section img{
+        width:120px;
+        height:120px;
+    }
+
+}

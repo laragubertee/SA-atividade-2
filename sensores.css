@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
     margin:0;
@@ -11,6 +12,7 @@ body{
     display:flex;
     min-height:100vh;
 }
+
 
 
 .menu-lateral{
@@ -68,13 +70,17 @@ body{
     text-decoration:none;
     font-size:18px;
     font-weight:700;
+    transition:.3s;
+}
+
+.menu-lateral nav a:hover{
+    color:#d9e5ff;
 }
 
 .menu-lateral nav a i{
     color:black;
     font-size:22px;
 }
-
 
 .conteudo{
     width:100%;
@@ -100,6 +106,7 @@ body{
     background:none;
     font-size:32px;
     cursor:pointer;
+    color:#23408F;
 }
 
 .icones{
@@ -111,12 +118,14 @@ body{
 .icones i{
     font-size:24px;
     cursor:pointer;
+    color:#23408F;
 }
 
 .icones img{
     width:28px;
     height:28px;
 }
+
 
 
 h1{
@@ -129,45 +138,43 @@ h1{
 
 
 
-.campo{
+.tabela-sensores{
     width:100%;
-    max-width:430px;
-    margin:0 auto 50px auto;
+    border-collapse:collapse;
+    background:#fff;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
-.campo label{
-    display:block;
-    margin-bottom:10px;
-    color:#23408F;
-    font-size:14px;
+.tabela-sensores thead{
+    background:#23408F;
 }
 
-.campo select,
-.campo input{
-    width:100%;
-    padding:12px;
-    border:1px solid #d8d8d8;
-    border-radius:8px;
-    background:white;
+.tabela-sensores th{
+    color:white;
+    padding:16px;
+    text-align:left;
+    font-size:16px;
+    font-weight:600;
+}
+
+.tabela-sensores td{
+    padding:16px;
+    border-bottom:1px solid #e5e5e5;
     font-size:15px;
-    outline:none;
 }
 
-.campo input[type="text"]{
-    border-radius:25px;
+.tabela-sensores tbody tr:nth-child(even){
+    background:#f8f8f8;
 }
 
-
-
-.trem{
-    display:flex;
-    justify-content:center;
-    margin-top:30px;
+.tabela-sensores tbody tr:hover{
+    background:#edf3ff;
+    transition:.3s;
 }
 
-.trem img{
-    width:320px;
-    opacity:0.25;
+.tabela-sensores tbody tr:last-child td{
+    border-bottom:none;
 }
 
 
@@ -188,6 +195,11 @@ h1{
 
     h1{
         font-size:26px;
+    }
+
+    .tabela-sensores{
+        display:block;
+        overflow-x:auto;
     }
 
 }

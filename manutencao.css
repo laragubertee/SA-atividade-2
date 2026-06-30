@@ -5,7 +5,6 @@ body {
     padding: 40px;
 }
 
-
 /* O container do cabeçalho */
 .header-manutencao {
     display: flex;
@@ -17,8 +16,7 @@ body {
     position: relative;      /* Permite posicionar a seta como absoluta dentro dele */
 }
 
-
-/* MODIFICAÇÃO AQUI: A seta agora gruda na esquerda */
+/* A seta agora gruda na esquerda */
 .seta_esquerda {
     position: absolute;      /* Desprende ela do fluxo normal do texto */
     left: -350px;
@@ -31,12 +29,10 @@ body {
     align-items: center;
 }
 
-
 .seta_esquerda i {
     font-size: 40px;
     color: black;
 }
-
 
 /* O título fica livre para centralizar no meio exato */
 h1 {
@@ -47,16 +43,15 @@ h1 {
     text-align: center;
 }
 
-
 /* Estilização da Tabela */
 .tabela-manutencao {
     width: 100%;
     max-width: 1200px;        
     margin: 0 auto;            
     border-collapse: separate;
-    border-spacing: 15px 22px;
+    /* ALTERADO: 0px na vertical impede que as linhas finas fiquem cortadas/separadas */
+    border-spacing: 15px 0px; 
 }
-
 
 /* Cabeçalhos (Trem, Data, Tipo) */
 .tabela-manutencao th {
@@ -70,7 +65,6 @@ h1 {
     width: 33.33%;
 }
 
-
 /* Células de dados (td) */
 .tabela-manutencao td {
     font-size: 16px;
@@ -78,16 +72,9 @@ h1 {
     font-weight: 500;
     text-align: center;
     vertical-align: middle;
-    padding: 0;
-    border-left: 1px solid black;
+    padding: 18px 0; /* Espaçamento confortável para a leitura */
+    border-bottom: 1px solid #E5E7EB; /* Linha fina e clara */
 }
-
-
-/* Remove a linha preta da primeira coluna */
-.tabela-manutencao td:first-child {
-    border-left: none;
-}
-
 
 /* Alinhamentos das laterais */
 .text-esquerda {
@@ -95,12 +82,11 @@ h1 {
     padding-left: 20px !important;
 }
 
-
+/* ALTERADO: Agora alinha perfeitamente à direita com margem interna correta */
 .text-direita {
-    text-align: left !important;
-    padding-left: 20px !important;
+    text-align: right !important;
+    padding-right: 20px !important;
 }
-
 
 /* O balãozinho cinza das datas */
 .badge-data {
@@ -112,4 +98,3 @@ h1 {
     font-weight: bold;
     font-size: 15px;
 }
-

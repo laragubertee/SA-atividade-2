@@ -54,7 +54,8 @@ h1 {
     max-width: 1200px;        
     margin: 0 auto;            
     border-collapse: separate;
-    border-spacing: 15px 22px;
+    /* AJUSTE: Mudamos o espaçamento vertical para 0px para que a linha horizontal atravesse as células sem quebras */
+    border-spacing: 15px 0px; 
 }
 
 
@@ -78,14 +79,10 @@ h1 {
     font-weight: 500;
     text-align: center;
     vertical-align: middle;
-    padding: 0;
-    border-left: 1px solid black;
-}
-
-
-/* Remove a linha preta da primeira coluna */
-.tabela-manutencao td:first-child {
-    border-left: none;
+    /* MODIFICAÇÃO: Adicionado padding superior e inferior para dar espaçamento interno antes da linha */
+    padding: 18px 0; 
+    /* MODIFICAÇÃO: Substituída a borda preta lateral por uma linha inferior fina e cinza clara */
+    border-bottom: 1px solid #E5E7EB; 
 }
 
 
@@ -96,9 +93,10 @@ h1 {
 }
 
 
+/* CORREÇÃO: Alinhado corretamente para a direita e ajustado o padding para a direita */
 .text-direita {
-    text-align: left !important;
-    padding-left: 20px !important;
+    text-align: right !important;
+    padding-right: 20px !important;
 }
 
 

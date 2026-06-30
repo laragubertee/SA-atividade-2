@@ -1,0 +1,74 @@
+.seta_esquerda i {
+    font-size: 40px; 
+    color: black; 
+}
+
+
+.seta_esquerda {
+    border: none;      
+    background: none;  
+    cursor: pointer;   
+    padding: 0;        
+}
+
+
+h1 {
+    color:#1E3A8A;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 60px;
+}
+
+
+
+.passagens, .passagens-media, .horarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-weight: bold;
+}
+
+
+
+.passagens {
+    width: 190px;          
+    height: 65px;          
+    border-radius: 14px;  
+    font-size: 17px;      
+    background-color: #1E3A8A;
+    color: white;
+    margin: 30px auto;     
+}
+
+
+
+.passagens-media {
+    width: 175px;          
+    height: 58px;          
+    border-radius: 12px;  
+    font-size: 16px;      
+    background-color: #E5E7EB;
+    color: #1E3A8A;            
+    margin: 30px auto;     
+}
+
+
+
+.container-horarios {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;  
+    gap: 15px;                
+    margin: 30px auto;        
+}
+
+
+
+.horarios {
+    width: 175px;              
+    height: 58px;              
+    border-radius: 12px;      
+    font-size: 16px;          
+    background-color: #E5E7EB;
+    color: #1E3A8A;
+}

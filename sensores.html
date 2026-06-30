@@ -50,69 +50,75 @@
 
     <main class="conteudo">
 
-        <div class="topo">
+    <div class="topo">
 
-            <button id="btnMenu" class="btn-menu">
-                <i class="bi bi-list"></i>
-            </button>
+        <button id="btnMenu" class="btn-menu">
+            <i class="bi bi-list"></i>
+        </button>
 
-            <div class="icones">
-
-                <i class="bi bi-gear"></i>
-
-                <i class="bi bi-moon-fill"></i>
-
-                <i class="bi bi-bell"></i>
-
-            </div>
-
+        <div class="icones">
+            <i class="bi bi-gear"></i>
+            <i class="bi bi-moon-fill"></i>
+            <i class="bi bi-bell"></i>
         </div>
 
-        <h1>Informações</h1>
+    </div>
 
-        <div class="campo">
+    <h1>Gerenciamento de Sensores</h1>
 
-            <label>Selecione o tipo de sensor:</label>
+    <table class="tabela-sensores">
 
-            <select>
-                <option>Sensor - KY-037</option>
-                <option>Sensor - KY-038</option>
-                <option>Sensor - KY-039</option>
-            </select>
+    <thead>
+        <tr>
+            <th>Sensor</th>
+            <th>Tipo</th>
+            <th>Local</th>
+            <th>Data de Adição</th>
+        </tr>
+    </thead>
 
-        </div>
-        <div class="campo">
+    <tbody id="tabelaSensores">
 
-            <label>Selecione o local do sensor:</label>
+        <tr>
+            <td>Sensor 001</td>
+            <td>KY-037</td>
+            <td>Trilho 1</td>
+            <td>30/06/2026</td>
+        </tr>
 
-            <select>
-                <option>Trilho 1</option>
-                <option>Trilho 2</option>
-                <option selected>Trilho 3</option>
-            </select>
+        <tr>
+            <td>Sensor 002</td>
+            <td>KY-038</td>
+            <td>Trilho 2</td>
+            <td>01/07/2026</td>
+        </tr>
 
-        </div>
-        <div class="campo">
+        <tr>
+            <td>Sensor 003</td>
+            <td>KY-039</td>
+            <td>Trilho 3</td>
+            <td>02/07/2026</td>
+        </tr>
 
-            <label>Selecione a data da adição:</label>
+        <tr>
+            <td>Sensor 004</td>
+            <td>KY-037</td>
+            <td>Estação Central</td>
+            <td>03/07/2026</td>
+        </tr>
 
-            <input type="date">
+        <tr>
+            <td>Sensor 005</td>
+            <td>KY-038</td>
+            <td>Pátio Ferroviário</td>
+            <td>04/07/2026</td>
+        </tr>
 
-        </div>
-        <div class="campo">
+    </tbody>
 
-            <label>Descreva o procedimento:</label>
+</table>
 
-            <input type="text">
-
-        </div>
-        <div class="trem">
-
-            <img src="trem.png" alt="Trem">
-
-        </div>
-
-    </main>
+</main>
 
     <script src="sensores.js"></script>
 

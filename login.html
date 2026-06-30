@@ -1,45 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div class="conteiner">
-    
-    <div class="bemvindo">
-        <h2>Seja Bem Vindo!</h2>
-        <p>Insira seu NOME e SENHA para<br>prossguir</p>
-    </div>
+<body class="bg-light">
 
-    <div class="input-group">
-        <div class="input-box">
-            <i class="fa-solid fa-user"></i>
-            <input type="texto" placeholder="Nome de usuário">
+    <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+
+        <div class="w-100" style="max-width: 420px;">
+
+            <div class="text-center mb-5">
+
+                <h1 class="fw-bold text-primary">
+                    Seja Bem Vindo!
+                </h1>
+
+                <p class="text-secondary mt-3">
+                    Insira seu <strong>NOME</strong> e <strong>SENHA</strong><br>
+                    para prosseguir
+                </p>
+
+            </div>
+
+            <form>
+
+                <!-- Usuário -->
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text bg-secondary-subtle border-0">
+                        <i class="fa-solid fa-user text-primary"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        class="form-control border-0 bg-secondary-subtle"
+                        placeholder="Nome de usuário">
+
+                </div>
+
+                <!-- Senha -->
+                <div class="input-group mb-2">
+
+                    <span class="input-group-text bg-secondary-subtle border-0">
+                        <i class="fa-solid fa-eye-slash text-primary"></i>
+                    </span>
+
+                    <input
+                        type="password"
+                        class="form-control border-0 bg-secondary-subtle"
+                        placeholder="Senha">
+
+                </div>
+
+                <div class="text-end mb-4">
+
+                    <a href="#" class="small text-decoration-none">
+                        Esqueceu sua senha?
+                    </a>
+
+                </div>
+
+                <div class="d-grid">
+
+                    <button class="btn btn-primary rounded-pill py-2 fw-bold">
+                        ENTRAR
+                    </button>
+
+                </div>
+
+                <div class="d-grid mt-5">
+
+                    <button
+                        type="button"
+                        class="btn btn-light border rounded-pill d-flex align-items-center justify-content-center gap-2 py-2">
+
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                            width="22"
+                            height="22">
+
+                        Continuar com Google
+
+                    </button>
+
+                </div>
+
+            </form>
+
         </div>
-    </div>
-        
-    <div class="input-box">
-        <i class="fa-solid fa-eye-slash"></i>
-        <input type="password" placeholder="Senha">
-    </div> 
 
-    <a href="recuperar-senha.html" class="esqueceu">Esqueceu Senha?</a>
-
-    <button class="btn-login">ENTRAR</button>
-
-    <a href="#" class="google-btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Google">Continuar com Google</a>
+        <img src="logo.png" class="logo mt-5">
 
     </div>
 
-    <div class="logo">
-        <img src="https://chatgpt.com/s/m_6a2808550b2c8191a19b9c899eb40fcf" alt="Logo">
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
 </body>
+
 </html>
