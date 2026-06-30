@@ -1,46 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monitoramento de Cargas</title>
-</head>
-<body>
-     <div class="screen-container">
-        <p class="screen-title">Monitoramento das Cargas</p>
-        <header>
-            <h1>Monitoramento das Cargas</h1>
-            <div>
-                <button>Acessibilidade (✋)</button>
-                <button>Configurações (⚙️)</button>
-                <button>Modo Escuro (🌙)</button>
-            </div>
-        </header>
+    <link rel="stylesheet" href="layout.css" />
 
-        <main>
-            <div>
-                <input type="text" placeholder="Search...">
-                <button>Pesquisar</button>
-            </div>
-            <section style="background: #161b22;">
-                <p><strong>Ponto Partida</strong></p>
-                <p>...</p> 
-                <p>Ponto de Destino / Carga</p>
-            </section>
-            <button style="margin-top:auto;">+ Adicionar Rota</button>
-        </main>
+    <!-- CSS específico da página -->
+    <link rel="stylesheet" href="MonitoramentoDeCargars.css" />
+  </head>
+  <body>
+    <div class="screen-container">
+      <p class="screen-title">Monitoramento de Cargas</p>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#"><span>🏠</span><p>Início</p></a></li>
-                    <li><a href="#"><span>📄</span><p>Menu</p></a></li>
-                    <li><a href="#"><span>🛒</span><p>Estoque</p></a></li>
-                    <li><a href="#"><span>👥</span><p>Funcionários</p></a></li>
-                </ul>
-            </nav>
-        </footer>
+      <!-- HEADER PADRÃO -->
+      <header>
+        <div class="titulo-logo">
+          <img
+            src="Captura_de_tela_2026-06-12_092539-removebg-preview.png"
+            class="logo"
+            alt="Logo"
+          />
+
+          <h1>Monitoramento de Cargas</h1>
+        </div>
+
+        <div class="header-icons">
+          <button>Acessibilidade</button>
+          <button>Configurações</button>
+          <button>Modo Escuro</button>
+          <button>Notificações</button>
+        </div>
+      </header>
+
+      <main>
+        <div>
+          <input type="text" placeholder="Search..." />
+          <button>Pesquisar</button>
+        </div>
+        <section style="background: #161b22">
+          <p><strong>Ponto Partida</strong></p>
+          <p>...</p>
+          <p>Ponto de Destino / Carga</p>
+        </section>
+        <button style="margin-top: auto">+ Adicionar Rota</button>
+      </main>
+
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                ><span>🏠</span>
+                <p>Início</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span>📄</span>
+                <p>Menu</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span>🛒</span>
+                <p>Estoque</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span>👥</span>
+                <p>Funcionários</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>

@@ -1,6 +1,4 @@
-/* ===================================
-   BARRA DE PESQUISA
-=================================== */
+
 
 .barra-busca{
     display:flex;
@@ -57,7 +55,7 @@
 
 .card-alerta{
     width:430px;
-    background:var(--AzulClaro);
+    background:var(--AzulEscuro);
     border-radius:20px;
     padding:22px 25px;
     color:#fff;
